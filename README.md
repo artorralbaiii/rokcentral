@@ -13,7 +13,7 @@ Setup :
 
 3.) Run npm install.
 
-4.) Run bower intall.
+4.) Run bower install.
 
 5.) Test the application by executing > gulp serve-dev
 
