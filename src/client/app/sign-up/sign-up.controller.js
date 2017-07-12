@@ -7,7 +7,17 @@
     SignUpController.$inject = [];
 
     function SignUpController() {
-        var vn = this;
+        var vm = this;
+
+        vm.submit = submit;
+        vm.user = {};
+
+        // Implementations
+
+        function submit() {
+            console.log(vm.user);
+        }
+
     }
 
 })();
