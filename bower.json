@@ -33,6 +33,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "angular": "^1.6.4",
-    "angular-route": "^1.6.4"
+    "angular-route": "^1.6.4",
+    "normalize-css": "normalize.css#^7.0.0"
   }
 }

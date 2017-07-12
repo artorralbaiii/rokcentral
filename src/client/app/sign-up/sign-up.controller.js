@@ -14,8 +14,19 @@
 
         // Implementations
 
-        function submit() {
-            console.log(vm.user);
+        function invalidPassword() {
+            return (vm.user.password !== vm.user.confirmPassword);
+        }
+
+        function submit(frm) {
+
+            if (invalidPassword()) {
+                frm.confirmPassword.$setValidity("passwordNotMatch", false);
+            } else {
+                frm.confirmPassword.$setValidity("passwordNotMatch", true);
+            }
+
+            console.log(frm.$valid);
         }
 
     }
