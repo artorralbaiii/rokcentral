@@ -1,0 +1,45 @@
+<section class="row">
+    <div class="col-md-4">
+        <div class="row">
+            <form name="frmUser" data-ng-submit="vm.submit(frmUser);" novalidate>
+                <fieldset>
+                    <legend>Sign Up Form</legend>
+                    <div class="form-group">
+                        <label for="fullName">Name</label>
+                        <input data-ng-model="vm.user.fullName" type="text" class="form-control" name="fullName" id="fullName" placeholder="Full Name"
+                            required>
+                        <p data-ng-show="frmUser.$submitted && frmUser.fullName.$error.required" class="help-block">Name is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input data-ng-model="vm.user.email" type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        <p data-ng-show="frmUser.$submitted && frmUser.email.$error.required" class="help-block">Email is required.</p>
+                        <p data-ng-show="frmUser.$submitted  && frmUser.email.$error.email" class="help-block">Invalid email format.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobiileNo">Mobile No.</label>
+                        <input data-ng-model="vm.user.mobileNo" type="text" class="form-control" name="mobiileNo" id="mobiileNo" placeholder="Mobile Number (format: 09171234567)"
+                            required>
+                        <p data-ng-show="frmUser.$submitted && frmUser.mobiileNo.$error.required" class="help-block">Mobile No is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input data-ng-model="vm.user.password" type="password" class="form-control" name="password" id="password" placeholder="Password"
+                            required>
+                        <p data-ng-show="frmUser.$submitted && frmUser.password.$error.required" class="help-block">Password is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input data-ng-model="vm.user.confirmPassword" type="password" class="form-control" name="confirmPassword" id="confirmPassword"
+                            placeholder="Confirm Password">
+                        <p data-ng-show="frmUser.$submitted && frmUser.confirmPassword.$error.required" class="help-block">Confirm Password is required.</p>
+                        <p data-ng-show="frmUser.$submitted && frmUser.confirmPassword.$error.passwordNotMatch" class="help-block">Confirm Password doesn't match with the password.</p>
+                    </div>
+
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

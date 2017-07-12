@@ -7,7 +7,8 @@
             'app.core',
             /* Feature Modules */
             'app.feature1',
-            'app.home'
+            'app.home',
+            'app.sign-up'
         ])
         .config(['$locationProvider', function ($locationProvider) {
             $locationProvider.html5Mode({
