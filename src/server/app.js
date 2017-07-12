@@ -20,14 +20,14 @@ let dbName = process.env.DB_NAME || '';
 let connString = 'mongodb://' + dbUser + ':' + dbPassword + '@' + dbHost + '/' + dbName;
 
 // Database Connection
-mongoose
-    .connect(connString, (err) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('Connected to database...');
-        }
-    });
+// mongoose
+//     .connect(connString, (err) => {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             console.log('Connected to database...');
+//         }
+//     });
 
 // Web Server Variables
 let app = express();
