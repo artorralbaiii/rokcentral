@@ -10,7 +10,7 @@
     <meta name="description" content="<Application Description>">
     <meta name="keywords" content="<keywords list here>">
 
-    <title>MEAN App Template</title>
+    <title>ROK Central</title>
 
     <!-- build:css styles/lib.css -->
     <!-- bower:css -->
@@ -27,15 +27,7 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">ROK Central</a>
-            </div>
-        </div>
-    </nav>
-
+    <app-nav></app-nav>
     <main data-ng-view class="container"></main>
 
     <!-- build:js js/lib.js -->
@@ -50,15 +42,16 @@
     <!-- build:js js/app.js-->
     <!-- inject:js -->
     <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/feature1/feature1.module.js"></script>
     <script src="/src/client/app/core/core.module.js"></script>
     <script src="/src/client/app/home/home.module.js"></script>
-    <script src="/src/client/app/feature1/feature1.module.js"></script>
     <script src="/src/client/app/sign-up/sign-up.module.js"></script>
-    <script src="/src/client/app/core/data.service.js"></script>
-    <script src="/src/client/app/home/home.controller.js"></script>
-    <script src="/src/client/app/home/home.route.js"></script>
     <script src="/src/client/app/feature1/feature1.controller.js"></script>
     <script src="/src/client/app/feature1/feature1.route.js"></script>
+    <script src="/src/client/app/core/data.service.js"></script>
+    <script src="/src/client/app/core/nav.dir.js"></script>
+    <script src="/src/client/app/home/home.controller.js"></script>
+    <script src="/src/client/app/home/home.route.js"></script>
     <script src="/src/client/app/sign-up/sign-up.controller.js"></script>
     <script src="/src/client/app/sign-up/sign-up.route.js"></script>
     <!-- endinject -->

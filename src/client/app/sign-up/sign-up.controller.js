@@ -21,9 +21,9 @@
         function submit(frm) {
 
             if (invalidPassword()) {
-                frm.confirmPassword.$setValidity("passwordNotMatch", false);
+                frm.confirmPassword.$setValidity('passwordNotMatch', false);
             } else {
-                frm.confirmPassword.$setValidity("passwordNotMatch", true);
+                frm.confirmPassword.$setValidity('passwordNotMatch', true);
             }
 
             console.log(frm.$valid);
